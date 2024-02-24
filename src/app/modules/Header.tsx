@@ -1,44 +1,24 @@
-import '../styles/index.css';
+import '../styles/Header.css';
 
-export default function Header() {
-    return(
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <div className="container-fluid">
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-              </button>
-              <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
-                  <li className="nav-item">
-                    <a className="nav-link" href="/">Home</a>
-                  </li>
+export default function Header(){
+    return (
+        <header>
+          <div className='header-container'>
+            <img src="assets/guild.png" alt="logo" className='header-logo' />
 
-                  <li className="nav-item">
-                    <a className="nav-link" href="/services">Services</a>
-                  </li>
+          <div className='header-contact-container'>
+            <div className='header-phone-number'>
+                <img src="assets/call.png" alt="" />
+                <a href="tel:0876331121">087 633 1121</a>
+            </div>
 
-                  <li className="nav-item">
-                    <a className="nav-link" href="/gallery">Gallery</a>
-                  </li>
-
-                  <li className="nav-item">
-                    <a className="nav-link" href="/customers">Customers</a>
-                  </li>
-
-                  <li className="nav-item">
-                    <a className="nav-link" href="/testimonials">Client Testimonials</a>
-                  </li>
-
-                  <li className="nav-item">
-                    <a className="nav-link" href="/charity">Sponsorship & Charity Work</a>
-                  </li>
-
-                  <li className="nav-item">
-                    <a className="nav-link" href="/contact">Contact</a>
-                  </li>
-              </ul>
-              </div>
+            <div className='header-email'>
+              <img src="assets/email.png" alt="" />
+              <a href="mailto:rddeego@gmail.com">rddeego@gmail.com</a>
+            </div>
           </div>
-        </nav>
+          </div>
+            
+        </header>
     );
 }
