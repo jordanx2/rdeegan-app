@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ESNext",
+    "isolatedModules": true,
     "lib": [
       "dom",
       "dom.iterable",
@@ -16,11 +17,13 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
-  ]
+    "src",
+    "src/modules/**/*",
+    "src/store/**/*",
+    "src/styles/**/*"
+, "src/app/index.tsx"  ]
 }
