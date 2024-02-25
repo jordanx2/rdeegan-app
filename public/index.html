@@ -4,11 +4,77 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Header.css">
     <title>React App</title>
   </head>
   <body>
+    <header>
+      <div class='header-container'>
+        <img src="assets/guild.png" alt="logo" class='header-logo' />
+  
+      <div class='header-contact-container'>
+        <div class='header-phone-number'>
+            <img src="assets/call.png" alt="" />
+            <a href="tel:0876331121">087 633 1121</a>
+        </div>
+  
+        <div class='header-email'>
+          <img src="assets/email.png" alt="" />
+          <a href="mailto:rddeego@gmail.com">rddeego@gmail.com</a>
+        </div>
+      </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-bkg py-4">
+      <div class="container-fluid d-flex justify-content-end">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item mx-3">
+              <a class="nav-items" href="/">Home</a>
+            </li>
+
+            <li class="nav-item mx-3">
+              <a class="nav-items" href="/services">Services</a>
+            </li>
+
+            <li class="nav-item mx-3">
+              <a class="nav-items" href="/gallery">Gallery</a>
+            </li>
+
+            <li class="nav-item mx-3">
+              <a class="nav-items" href="/customers">Customers</a>
+            </li>
+
+            <li class="nav-item mx-3">
+              <a class="nav-items" href="/testimonials">Client Testimonials</a>
+            </li>
+
+            <li class="nav-item mx-3">
+              <a class="nav-items" href="/charity">Sponsorship & Charity Work</a>
+            </li>
+
+            <li class="nav-item mx-3">
+              <a class="nav-items" href="/contact">Contact</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
     <div id="root"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
